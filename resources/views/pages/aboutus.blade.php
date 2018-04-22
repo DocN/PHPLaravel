@@ -67,21 +67,30 @@
 <body>
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
-    <div class="top-right links">
-        @auth
-        <a href="{{ url('/home') }}">Home</a>
-        @else
-        <a href="{{ route('login') }}">Login</a>
-        <a href="{{ route('register') }}">Register</a>
-        @endauth
-    </div>
+        <div class="top-right links">
+            @auth
+                <a href="{{ url('/home') }}">Home</a>
+            @else
+                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('register') }}">Register</a>
+            @endauth
+        </div>
     @endif
 
     <div class="content">
         <div class="title m-b-md">
-            Contact US
+            About US
         </div>
+        <div class="dark">
+            <figure>
+                <img class="about" src="/images/CMS_Creative_164657191_Kingfisher.jpg" alt="jason">
+                <figcaption>Jason wants you spending time doing what you love</figcaption>
+            </figure>
 
+            <p style="text-align:left; padding-left:20%; padding-right:20%; padding-top:10px">
+                we want you spending your time your way.
+            </p>
+        </div>
         <div class="links">
             <a href="mailto:admin@swiperighttoapply.com?subject=swipe right apply, help">Email</a>
             <a href="https://twitter.com/RightToApply">Twitter</a>
