@@ -28,3 +28,5 @@ Route::get('posting/{id}', 'PostingsController@show');
 Route::resource('profile', 'CompanyProfileController');
 
 Route::resource('post', 'JobPostController');
+
+Route::resource('users', 'UsersController@index');
